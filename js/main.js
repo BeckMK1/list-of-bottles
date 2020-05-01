@@ -1,18 +1,20 @@
 "use strict";
-
-
 let beers = [{
     name: "tuborg",
-    image:"../images/tuborg.jpg"
+    image:"images/tuborg.jpg",
+    country: "Denmark"
 },{
     name:"Elgoods",
-    image:"../images/elgoods.jpg"
+    image:"images/elgoods.jpg",
+    country: "England"
 }, {
     name:"looseleaf",
-    image:"../images/looseleaf.png"
+    image:"images/looseleaf.png",
+    country: "USA"
 },{
-    name:"Greece",
-    image:"../images/greece.jpg"
+    name:"corona",
+    image:"images/corona.jpg",
+    country: "Mexico"
 }
 ]
 // appends the list of beer to DOM
@@ -37,7 +39,11 @@ function showDetailView(index){
  let selecetedBeer = beers[index];
   document.querySelector("#detail-view").innerHTML=`
   <header class="title"><h2>${selecetedBeer.name}</h2></header>
+  <div class="seleceted-container">
   <img src="${selecetedBeer.image}">
+  <p>country of origin: ${selecetedBeer.country}</p>
+  <button onclick="navigateTo('list')">home</button>
+  </div>
   `;
 console.log(selecetedBeer)
 navigateTo("detail-view")

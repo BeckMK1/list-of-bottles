@@ -2,7 +2,6 @@
 margin: 0;
 padding: 0;
 }
-
 .title {
     text-align: center;
     background-color: yellow;
@@ -19,15 +18,24 @@ padding: 0;
     width: 200px;
     height: 400px;
 }
-
-.nav {
-    position: fixed;
-    bottom: 0;
-    background-color: yellow;
-    width: 100%;
-    height: auto;
-    text-align: center;
+.seleceted-container{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+grid-template-areas:
+". image ."
+". country ."
+;
+text-align: center;
 }
-.nav p{
-
+.seleceted-container p{
+grid-area: country;
+}
+.seleceted-container img{
+grid-area: image;
+justify-self: center;
+}
+#detail-view img{
+width: 300px;
+height: 600px;
 }
