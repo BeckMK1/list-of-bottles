@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mikkel Beck Knudsen"> 
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onhashchange="pageChange()">
+    <section id="list" class="page">
+        <div class="title">
+            <h1>beer</h1>
+        </div>
+        <div id="list-container">
+        </div>
+    </section>
+    <section id="add">
+        <input type="text" placeholder="name of beer" id="name">
+        <input type="text" placeholder="url to image of beer" id="urlImage">
+        <button onclick="addNewBeer()">add</button>
+    </section>
+    <section id="detail-view" class="page"></section>
+    <div class="nav">
+    <ul>
+    <li>add</li>
+    <li>home</li>
+    </ul>
+    </div>
+    <!-------------------- scrips --------------------->
+    <script src="js/spa.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+.title {
+    text-align: center;
+    background-color: yellow;
+}
+
+#list-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.beer img {
+    width: 200px;
+    height: 400px;
+}
+
+.nav {
+    position: fixed;
+    bottom: 0;
+    background-color: yellow;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.nav p{
+
+}
